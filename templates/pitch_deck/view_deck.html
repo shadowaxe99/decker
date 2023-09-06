@@ -1,0 +1,21 @@
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>{{ deck.title }}</h1>
+        <p>{{ deck.description }}</p>
+        <hr>
+        <h2>Slides</h2>
+        {% for slide in deck.slides.all %}
+          <div class="slide">
+            <h3>{{ slide.title }}</h3>
+            <p>{{ slide.content }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

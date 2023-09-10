@@ -8,6 +8,7 @@ Welcome to the AI Pitch Deck Generator! This tool is designed to help founders c
 - Leverage AI to create compelling narratives and financial projections
 - Customize content for each slide based on investor's preferences
 - Save time and effort in preparing for pitches
+- Search x.com and Crunchbase for relevant information
 
 ## Installation
 

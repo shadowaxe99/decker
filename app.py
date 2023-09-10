@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from PitchDeckGenerator import PitchDeckGenerator
+from WebSearcher import WebSearcher
 
 app = Flask(__name__)
 
@@ -8,7 +9,10 @@ def home():
     if request.method == 'POST':
         brand = request.form.get('brand')
         generator = PitchDeckGenerator()
-        generator.create_pitch_deck(brand)
+        searcher = WebSearcher()
+        xcom_links = searcher.search('site:x.com ' + brand)
+        crunchbase_links = searcher.search('site:crunchbase.com ' + brand)
+        generator.create_pitch_deck(brand, xcom_links, crunchbase_links)
         return render_template('success.html')
     return render_template('index.html')
 

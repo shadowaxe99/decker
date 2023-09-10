@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>AI Pitch Deck Generator</title>
+</head>
+<body>
+    <h1>Welcome to the AI Pitch Deck Generator</h1>
+    <p>Please enter the required information to generate your personalized pitch deck.</p>
+    <form action="/generate_pitch_deck" method="POST">
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" name="brand" required><br><br>
+        <label for="xcom_links">XCom Links:</label>
+        <input type="text" id="xcom_links" name="xcom_links" required><br><br>
+        <label for="crunchbase_links">Crunchbase Links:</label>
+        <input type="text" id="crunchbase_links" name="crunchbase_links" required><br><br>
+        <input type="submit" value="Generate Pitch Deck">
+    </form>
+</body>
+</html>

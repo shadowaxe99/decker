@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-import PitchDeckGenerator
+from PitchDeckGenerator import PitchDeckGenerator
 
 app = Flask(__name__)
 
@@ -7,7 +7,8 @@ app = Flask(__name__)
 def home():
     if request.method == 'POST':
         brand = request.form.get('brand')
-        PitchDeckGenerator.main(brand)
+        generator = PitchDeckGenerator()
+        generator.main(brand)
         return render_template('success.html')
     return render_template('index.html')
 

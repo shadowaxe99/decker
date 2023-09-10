@@ -1,7 +1,6 @@
 import openai
 from pptx import Presentation
 
-
 class PitchDeckGenerator:
     def __init__(self):
         self.presentation = Presentation()
@@ -37,3 +36,6 @@ class PitchDeckGenerator:
             self.create_slide(title, content)
 
         self.presentation.save(f'{influencer}_pitch_deck.pptx')
+
+    def main(self, brand):
+        self.create_pitch_deck(brand)

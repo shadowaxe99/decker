@@ -8,7 +8,7 @@ def home():
     if request.method == 'POST':
         brand = request.form.get('brand')
         generator = PitchDeckGenerator()
-        generator.main(brand)
+        generator.create_pitch_deck(brand)
         return render_template('success.html')
     return render_template('index.html')
 

@@ -37,5 +37,8 @@ class PitchDeckGenerator:
 
         self.presentation.save(f'{influencer}_pitch_deck.pptx')
 
+def create_investor_specific_pitch_deck(self, influencer, investor):
+        preferences = investor.get_preferences()
+        self.create_pitch_deck(influencer, preferences)
     def main(self, brand):
         self.create_pitch_deck(brand)

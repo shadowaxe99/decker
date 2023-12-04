@@ -38,3 +38,15 @@ button {
     text-align: center;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 980px) {
+  /* Adjust styles for smaller screens */
+}
+
+@media screen and (max-width: 736px) {
+  /* Adjust styles for mobile screens */
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjust styles for very small screens */
+}

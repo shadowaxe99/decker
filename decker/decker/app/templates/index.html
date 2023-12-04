@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block content %}
 
-<!-- Banner -->
-<section id="banner" class="major">
+<!-- High-resolution banner image -->
+<section id="banner" style="background-image: url('{{ url_for('static', filename='images/futuristic-banner.jpg') }}');">
   <div class="inner">
     <header class="major">
       <h1>QuikSlide</h1>
@@ -21,6 +21,11 @@
     </div>
   </div>
 </section>
+
+<!-- Placeholder for chatbot or AI suggestions -->
+<div id="ai-chatbot">
+  <!-- Chatbot will be implemented here -->
+</div>
 
 <!-- Main -->
 <div id="main">
@@ -134,6 +139,11 @@
   </section>
 </div>
 
+<!-- Placeholder for data visualization -->
+<div id="data-visualization">
+  <!-- Data visualization will be implemented here -->
+</div>
+
 <!-- Contact -->
 <section id="contact">
   <div class="inner">
@@ -174,7 +184,6 @@
           <span>(613) 581-4953 x----</span>
         </div>
       </section>
-     
       <section>
         <div class="contact-method">
           <span class="icon solid alt fa-home"></span>
@@ -187,10 +196,7 @@
         </div>
       </section>
     </section>
-          >
-        </div>
-      </section>
-    </section>
   </div>
 </section>
+
 {% endblock content %}
